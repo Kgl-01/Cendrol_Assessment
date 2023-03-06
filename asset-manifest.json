@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Cendrol_Assessment/static/css/main.be63c249.css",
+    "main.js": "/Cendrol_Assessment/static/js/main.b8d2c7e0.js",
+    "index.html": "/Cendrol_Assessment/index.html",
+    "main.be63c249.css.map": "/Cendrol_Assessment/static/css/main.be63c249.css.map",
+    "main.b8d2c7e0.js.map": "/Cendrol_Assessment/static/js/main.b8d2c7e0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.be63c249.css",
+    "static/js/main.b8d2c7e0.js"
+  ]
+}
