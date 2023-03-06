@@ -11,7 +11,7 @@ function App() {
   };
 
   const changeColor = () => {
-    cendrol > 10 ? setValueChanged(true) : setValueChanged(false);
+    setValueChanged(!valueChanged);
   };
 
   return (
