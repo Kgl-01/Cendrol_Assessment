@@ -3,8 +3,8 @@ import "./counter.styles.scss";
 
 const Counter = ({ value, handleClick, valueChanged, changeColor }) => (
   <Fragment>
-    <div className="rectangle">
-      <div className="circle">
+    <div className="counter-holder">
+      <div className="counter">
         <div className="value">{value}</div>
         <button className="increment-button" onClick={handleClick}>
           Click to increase counter
