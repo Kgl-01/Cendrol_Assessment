@@ -1,0 +1,77 @@
+$small:500px;
+
+.rectangle{
+    height: 400px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    border-radius: 5%;
+    margin-bottom: 40px;
+
+
+    .circle{
+      height: 300px;
+      width: 300px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #fbc02d;
+      flex-direction: column;
+     
+      .value{
+        font-size: 40px;
+        font-weight: 800;
+        margin-bottom: 20px;
+      }
+
+      .increment-button{
+        background: none;
+        color: inherit;
+        font-size: 15px;
+        font-weight: 500;
+        padding: 0;
+        border: none;
+        border-bottom: 1px solid black;
+        cursor: pointer;
+
+        &:hover{
+          font-weight: bold;
+          transform: scale(1.1);
+          transition: 0.1s transform;
+         }
+      }
+    }
+  }
+
+  .change-color{
+   width: 150px;
+   height: 30px;
+   padding: 0;
+   font-size: 20px;
+   border-radius: 6px;
+   border: none;
+   background-color: #64ffda;
+   font-weight: bold;
+   cursor: pointer;
+
+   &:hover{
+    transform: scale(1.1);
+    transition: 0.1s transform;
+   }
+
+  }
+
+  @media screen and (max-width:$small) {
+    .rectangle{
+        height:300px;
+        width:300px;
+
+        .circle{
+            height:230px;
+            width:230px;
+        }
+    }
+  }

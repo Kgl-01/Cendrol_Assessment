@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.scss";
+import Counter from "./components/counter/counter.component";
 
 function App() {
+  const [cendrol, setCendrol] = useState(2);
+  const [valueChanged, setValueChanged] = useState(false);
+
+  const handleClick = () => {
+    setCendrol((prevCendrol) => prevCendrol + 10);
+  };
+
+  const changeColor = () => {
+    cendrol > 10 ? setValueChanged(true) : setValueChanged(false);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="counter-container">
+      <Counter
+        value={cendrol}
+        handleClick={handleClick}
+        valueChanged={valueChanged}
+        changeColor={changeColor}
+      />
     </div>
   );
 }
